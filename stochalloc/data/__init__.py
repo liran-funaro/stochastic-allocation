@@ -59,7 +59,7 @@ metadata_1d_real = {
     },
     'load': {
         'real-load': True,
-        'max-days': 1,
+        'max-days': 100,
         'over-the-top': True,
         'enrich-method': 'beta',
         'rounds': (24, 60 * 5),  # 24 h. 5 times per minute (each 12 seconds)
@@ -86,9 +86,6 @@ real_beta50_1d = dataset.alter_dataset(real_increasing_1d, folder_format, (('loa
 
 real_nooverthetop_1d = dataset.alter_dataset(real_increasing_1d, folder_format, (('load', 'over-the-top'), False),
                                              prefix='realdata-nooverthetop')
-
-real_multiday_1d = dataset.alter_dataset(real_increasing_1d, folder_format, (('load', 'max-days'), 1000),
-                                         prefix='realdata-multiday')
 
 beta_load_1d = dataset.alter_dataset(real_increasing_1d, folder_format, perfix='lomax', load={
         'real-load': False,
