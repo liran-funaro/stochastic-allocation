@@ -38,4 +38,5 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     install_requires=['numpy', 'matplotlib', 'scipy', 'seaborn', 'pandas', 'vecfunc', 'cloudsim', 'tabulate'],
+    dependency_links=['https://bitbucket.org/funaro/vecfunc', 'https://bitbucket.org/funaro/cloudsim'],
 )
