@@ -14,8 +14,8 @@ apt-get install g++-8
 
 Download and install dependencies by cloning the following repositories:
 
- * vecfunc: https://bitbucket.org/funaro/vecfunc
- * cloudsim: https://bitbucket.org/funaro/cloudsim
+ * vecfunc: https://github.com/liran-funarofunaro/vecfunc
+ * cloudsim: https://github.com/liran-funaro/funaro/cloudsim
  
 Follow the `README.md` file in each of these repositories to install them properly.
  
